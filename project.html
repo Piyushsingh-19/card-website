@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Piyush's Nature Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin: 40px 0 20px 0;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+    }
+
+    .card {
+      background-color: #fff;
+      width: 260px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px 18px;
+    }
+
+    .tags {
+      padding: 5px 0;
+    }
+
+    .tags span {
+      border: 1px solid #ccc;
+      padding: 4px 8px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-right: 5px;
+      color: #555;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      color: #2d3436;
+      margin: 10px 0 6px 0;
+    }
+
+    .card-content p {
+      font-size: 13px;
+      color: #636e72;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      margin: 40px 0 15px 0;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Piyush’s Nature Gallery</h1>
+    <p>Exploring the beauty of the world 🌿</p>
+  </header>
+
+  <section class="gallery">
+    <div class="card">
+      <img src="Screenshot 2025-11-11 134859.png" alt="Nature Image" />
+      <div class="card-content">
+        <div class="tags">
+          <span>Nature</span>
+          <span>Lake</span>
+        </div>
+        <h3>Peaceful Lake View</h3>
+        <p>Enjoy the calmness of the lake surrounded by lush greenery and soft sunlight.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Screenshot 2025-11-11 134859.png" alt="Nature Image" />
+      <div class="card-content">
+        <div class="tags">
+          <span>Mountain</span>
+          <span>Adventure</span>
+        </div>
+        <h3>Mountain Escape</h3>
+        <p>Experience the thrilling heights and peaceful vibe of the mighty mountains.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Screenshot 2025-11-11 134859.png" alt="Nature Image" />
+      <div class="card-content">
+        <div class="tags">
+          <span>Forest</span>
+          <span>Wildlife</span>
+        </div>
+        <h3>Into the Woods</h3>
+        <p>Discover the beauty of deep forests and the sounds of untouched nature.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Made with ❤️ by Piyush Singh
+  </footer>
+</body>
+
+</html>
